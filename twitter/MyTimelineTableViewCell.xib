@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="My Timeline Cell" id="ti1-ob-MsT" customClass="MyTimelineTableViewCell" customModule="Twitter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ti1-ob-MsT" id="UXe-Ss-FFo">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dw9-J6-KnA">
+                        <rect key="frame" x="14" y="16" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="0zY-fX-pvh"/>
+                            <constraint firstAttribute="width" constant="56" id="OLH-X9-poU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ryo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCw-3j-l6g">
+                        <rect key="frame" x="78" y="16" width="234" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="234" id="UBn-h2-tbw"/>
+                            <constraint firstAttribute="height" constant="20" id="Z0x-60-3KH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqm-V8-sdv">
+                        <rect key="frame" x="78" y="44" width="234" height="131"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dw9-J6-KnA" firstAttribute="leading" secondItem="UXe-Ss-FFo" secondAttribute="leading" constant="14" id="7IB-FM-x9Y"/>
+                    <constraint firstItem="Zqm-V8-sdv" firstAttribute="top" secondItem="iCw-3j-l6g" secondAttribute="bottom" constant="8" id="9q1-f3-o39"/>
+                    <constraint firstItem="iCw-3j-l6g" firstAttribute="leading" secondItem="Dw9-J6-KnA" secondAttribute="trailing" constant="8" id="Bwj-K3-pCR"/>
+                    <constraint firstItem="Dw9-J6-KnA" firstAttribute="top" secondItem="UXe-Ss-FFo" secondAttribute="top" constant="16" id="G1M-YT-N5Y"/>
+                    <constraint firstItem="iCw-3j-l6g" firstAttribute="top" secondItem="UXe-Ss-FFo" secondAttribute="top" constant="16" id="OiR-Pi-CTZ"/>
+                    <constraint firstItem="Zqm-V8-sdv" firstAttribute="leading" secondItem="Dw9-J6-KnA" secondAttribute="trailing" constant="8" id="P3L-XR-ikt"/>
+                    <constraint firstAttribute="bottom" secondItem="Zqm-V8-sdv" secondAttribute="bottom" constant="25" id="VJE-n5-4Un"/>
+                    <constraint firstAttribute="trailing" secondItem="Zqm-V8-sdv" secondAttribute="trailing" constant="8" id="dOD-e5-4zu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="profileImageView" destination="Dw9-J6-KnA" id="8St-QE-yrO"/>
+                <outlet property="tweetLabel" destination="Zqm-V8-sdv" id="bJb-J9-VEb"/>
+                <outlet property="usernameLabel" destination="iCw-3j-l6g" id="osO-2U-wM8"/>
+            </connections>
+            <point key="canvasLocation" x="544" y="427"/>
+        </tableViewCell>
+    </objects>
+</document>
